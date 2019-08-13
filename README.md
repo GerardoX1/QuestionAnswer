@@ -1,12 +1,12 @@
 # Q_A Questions&Answers
 
-_Este modulo es un poco basico, lo que realiza es una solicitud requests a google y directamente extrae la la respuesta a la pregunta que fue realizada, en caso de que esta pregunta no se encuentre en las respuestas rapidas que brinda google, el sistema scrapea las primeras paginas y realiza un analisis de NLP para extraer la respuesta de forma sintetizada asi como determinar cual de las paginas contiene la mejor respuesta._
+_Este módulo es un poco básico, lo que realiza es una solicitud requests a google y directamente extrae la la respuesta a la pregunta que fue realizada, en caso de que esta pregunta no se encuentre en las respuestas rápidas que brinda google, el sistema scrapea las primeras páginas y realiza un análisis de NLP para extraer la respuesta de forma sintetizada así como determinar cual de las páginas contiene la mejor respuesta._
 
 ## Comenzando 🧠➕🤖 = 👍
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+Mira **Deployment** para conocer cómo desplegar el proyecto.
 
 
 ### Pre-requisitos 📋
@@ -31,30 +31,51 @@ python -m spacy download en_core_web_sm
 ```
 
 ### Instalación 🔧
+_NOTA: Tambien subí una versión solo para ejecutar_
 
-_Para la instalacion de este programa lo unico que tienes que hacer es descargar el archivo .tar.gz y ejecutar el siguiente comando (tomando en cuenta el numero de version del archivo):_
+_Para la instalación de este programa lo unico que tienes que hacer es descargar el archivo .tar.gz y ejecutar el siguiente comando (tomando en cuenta el número de versión del archivo):_
 
 ```
 pip install Preguntas\&Respuestas-1.6.1.tar.gz
 ```
 
-_Una ves instalado puedes utilizarlo en tus scrips escribiendo las siguientes lineas_
+_Una vez instalado puedes utilizarlo en tus scripts escribiendo las siguientes líneas_
 
 ```
 from QuestionsAnswers.Q_A import ExtraccionRespuestas
 QAnswer = ExtraccionRespuestas()
 
-pregunta = "Cuando murio benito juarez"
+pregunta = "Cuando murió Benito Juárez"
 respuesta =QAnswer.MainUser(pregunta)
 
 print(respuesta)
 
+18 de julio de 1872, Palacio Nacional, Ciudad de México, México
+
 ```
-_El codigo te retornara un string con la respuesta a la pregunta_
+_El codigo te retornará un string con la respuesta a la pregunta_
+
+_algunos ejemplos de preguntas faciles son:_
+
+*Quien Descubrio america?
+*Que es el amor?
+*Cuantos años tiene Chabelo?
+*Donde esta el Taj Mahal?
+*Cuando fue la primera guerra mundial?
+*Por que vuelan los aviones?
+
+_Preguntas mas complejas como:_
+
+*Que pasa si metes una uva al microondas?
+*Que opinas del nuevo presidente de México?
+*Analisis y opinion de pelicula de Avengers endgame
+*Que puedo hacer para pasar un examen si no estudie?
+
+_La segunda parte de preguntas es mucho mas complejo que las primeras, como esta segunda parte requiere de mas procesamiento y NLP ademas del scrapeo a distintas paginas, se demora un poco mas de tiempo en retornar una respuesta_
 
 ## Construido con 🛠️
 
-_Las Herramientas que se utilizaron para la creacion de este proyecto fueron_
+_Las Herramientas que se utilizaron para la creación de este proyecto fueron_
 
 * [spacy](https://spacy.io/models) - modelo de lenguaje natural
 * [textacy](https://pypi.org/project/textacy/) - Procesamiento de textos
