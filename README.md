@@ -15,11 +15,11 @@ _Antes de instalar el proyecto es importante contar con las siguientes paqueteri
 
 _NOTA: Es altamente recomendable utilizar entornos virtuales, para evitar problemas de compatibilidad con otros archivos_
 
-_beautifulsoup4==4.7.1
-textacy==0.6.2
-msgpack==0.6.1
-spacy
-es-core-news-sm --> este programa se instala escribiendo en la terminal "python -m spacy download es_core_news_sm"_
+* beautifulsoup4==4.7.1
+* textacy==0.6.2
+* msgpack==0.6.1
+* spacy
+* es-core-news-sm --> este programa se instala escribiendo en la terminal "python -m spacy download es_core_news_sm"_
 
 _Desde tu terminal ejecuta los siguientes comandos_
 ```
@@ -57,19 +57,19 @@ _El codigo te retornará un string con la respuesta a la pregunta_
 
 _algunos ejemplos de preguntas faciles son:_
 
-*Quien Descubrio america?
-*Que es el amor?
-*Cuantos años tiene Chabelo?
-*Donde esta el Taj Mahal?
-*Cuando fue la primera guerra mundial?
-*Por que vuelan los aviones?
+* Quien Descubrio america?
+* Que es el amor?
+* Cuantos años tiene Chabelo?
+* Donde esta el Taj Mahal?
+* Cuando fue la primera guerra mundial?
+* Por que vuelan los aviones?
 
 _Preguntas mas complejas como:_
 
-*Que pasa si metes una uva al microondas?
-*Que opinas del nuevo presidente de México?
-*Analisis y opinion de pelicula de Avengers endgame
-*Que puedo hacer para pasar un examen si no estudie?
+* Que pasa si metes una uva al microondas?
+* Que opinas del nuevo presidente de México?
+* Analisis y opinion de pelicula de Avengers endgame
+* Que puedo hacer para pasar un examen si no estudie?
 
 _La segunda parte de preguntas es mucho mas complejo que las primeras, como esta segunda parte requiere de mas procesamiento y NLP ademas del scrapeo a distintas paginas, se demora un poco mas de tiempo en retornar una respuesta_
 
